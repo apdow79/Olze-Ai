@@ -1,0 +1,23 @@
+{
+  "name": "olze",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Olze \u2014 free-first AI development platform. Build websites and apps with AI. No Ollama required.",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,magenta \"npm run dev -w @olze/api\" \"npm run dev -w @olze/web\"",
+    "dev:api": "npm run dev -w @olze/api",
+    "dev:web": "npm run dev -w @olze/web",
+    "build": "tsc -b && npm run build -w @olze/web",
+    "typecheck": "tsc -b --force",
+    "test": "node --test tests/",
+    "clean": "rm -rf packages/*/dist apps/api/dist apps/web/.next"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

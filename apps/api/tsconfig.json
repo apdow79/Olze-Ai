@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "composite": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../../packages/shared-types"
+    },
+    {
+      "path": "../../packages/ai-gateway"
+    },
+    {
+      "path": "../../packages/agent-core"
+    }
+  ]
+}

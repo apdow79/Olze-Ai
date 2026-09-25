@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/shared-types"
+    },
+    {
+      "path": "packages/ai-gateway"
+    },
+    {
+      "path": "packages/agent-core"
+    },
+    {
+      "path": "apps/api"
+    }
+  ]
+}

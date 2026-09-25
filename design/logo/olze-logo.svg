@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="Olze">
+  <defs>
+    <linearGradient id="olzeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="55%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <!-- mark: rounded square with stylized O + cursor -->
+  <rect x="4" y="8" width="48" height="48" rx="12" fill="url(#olzeGrad)"/>
+  <circle cx="28" cy="32" r="12" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  <rect x="25.5" y="16" width="5" height="9" rx="2.5" fill="#FFFFFF"/>
+  <!-- wordmark -->
+  <text x="66" y="44" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="700" fill="currentColor">Olze</text>
+</svg>
